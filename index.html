@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AltitudeCode | Where Innovation Meets New Heights</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/logo.png">
+</head>
+
+<body>
+    <!--Bootstrap Imports-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <!--End Bootstrap imports-->
+
+    <!--Comment out Animation JS TBC
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const svgPath = document.getElementById("draw-path");
+            const overlayImg = document.getElementById("overlay-img");
+
+            svgPath.addEventListener("animationend", () => {
+                svgPath.classList.add("d-none");
+            });
+
+        });
+    </script>
+    -->
+
+    <!--Start with header in hero container to overlap the background color TBC-->
+    <div id='hero-container' class="fluid-container">
+        <header class="sticky-top bg-transparent">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-sm d-flex justify-content-space-between">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img class="navbar-brand shadow-lg" id="logo" img src="imgs/logo_square.svg" />
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><img src="imgs/menu.svg" /></span>
+                    </button>
+
+                    <!-- Links -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class=" ms-auto navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item dropdown px-2">
+                                <a class="nav-link dropdown-toggle link-light" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false" style="animation-delay: 0.3s;">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link nav-link link-light" href="#"
+                                    style="animation-delay: 0.4s;">Contact</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link nav-link link-light" href="#"
+                                    style="animation-delay: 0.5s;">About</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--End navbar-->
+        </header>
+
+        <!--Hero section-->
+        <div id="hero" class="row bg-transparent justify-content-center mx-auto">
+            <div class="position-relative">
+                <img class="position-absolute top-0 start-0 translate-middle img-fluid fade-in-from-right"
+                    src="imgs/triangle_deco_left.svg" style="z-index: 1; animation-delay: 1.5s;" />
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 position-relative" style="z-index: 2;">
+                <div class="position-absolute top-50 start-50 back-glow position-relative fade-in"
+                    style="width: 1px; animation-delay: 1s;"></div>
+                <h1 style="animation-delay: 0.9s;"><span id="title-color">Altitude</span> Code</h1>
+                <p class="fw-semibold fade-in" style="animation-delay: 0.8s;">Where innovation meets new heights.</p>
+                <p class="fs-6 fw-semibold fade-in" style="color: #B7B7B7; animation-delay: 1.1s;">Cloud, Front-End,
+                    Data Integration, and Security services. </p>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center ">
+                <!--Comment out animated, outline-styled logo (TBC)
+                <div class="svg-wrapper position-relative">
+                    <svg width="200" height="200" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="draw-path" fill="none" stroke="url(#paint0_linear_242_104)" stroke-width="2"
+                            d="M51.9563 0.431009C51.5061 0.938025 49.8875 4.14549 19.3111 65.1187L6.52491 90.5898C0.914274 101.756 0 103.689 0 104.384C0 104.992 0.106748 105.294 0.42773 105.597L0.85546 106L53.0749 105.953L105.294 105.906L105.648 105.443C106.446 104.401 106.48 104.482 99.118 89.8365L83.1471 57.9972L53.9591 0.364788C53.5205 -0.149257 52.4397 -0.113557 51.9563 0.431009ZM52.8389 21.8056C52.4867 22.3772 50.9655 25.4311 49.9683 27.5688L46.8724 34.043L44.1119 39.7772L38.4386 51.7081L35.8803 57.0492L34.2922 60.4046C34.2922 60.4318 33.5368 62.0237 32.6135 63.9425L29.6832 70.113L26.9546 75.855L24.6474 80.6644L20.666 88.8843L17.5148 95.4971C17.5148 95.5756 19.9236 95.6396 22.8675 95.6396H28.2201L30.9112 90.1366L35.9457 79.8242L41.2513 69.0032L48.2948 54.6693L52.6606 45.9111L52.9453 45.4751L53.2351 45.8902C53.3944 46.1183 54.4548 48.1867 55.5915 50.4863L64.2508 67.9858L72.7704 85.281L76.2884 92.4488L77.8793 95.6396H82.6115C85.2142 95.6396 87.6028 95.6915 87.9198 95.7552C88.2656 95.8245 88.4959 95.7949 88.4959 95.681C88.4959 95.5765 87.3866 93.2147 86.0307 90.4323L82.6389 83.4312L79.3886 76.7059L77.0652 71.8568C77.0652 71.8205 76.6017 70.8517 76.0349 69.7035L73.6564 64.7488L71.0231 59.1995L68.2569 53.3728L65.2217 46.9912L60.5854 37.28C54.9943 25.5362 52.9978 21.5477 52.8389 21.8056ZM50.8877 70.7605L47.4745 77.7895L42.5175 87.9417L38.9013 95.4794C38.9013 95.5674 40.5815 95.6383 42.6347 95.6366L46.3682 95.6335L49.5595 89.1507C51.3149 85.5851 52.8426 82.6985 52.9547 82.7361C53.0668 82.7737 54.5896 85.6713 56.3391 89.1756L59.5199 95.5471L62.5312 95.6396C64.1872 95.6904 65.9283 95.6904 66.4003 95.6396L67.2584 95.5471L63.3094 87.5007L56.16 72.9802L52.9596 66.506L50.8877 70.7605Z" />
+                        <defs>
+                            <linearGradient id="paint0_linear_242_104" x1="53.3759" y1="0" x2="106.412" y2="104.409"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#196BE3" />
+                                <stop offset="1" stop-color="#446493" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    -->
+                <img class="fade-in" id="overlay-img" src="imgs/logo.svg" style="animation-delay: 1s;" />
+                <!--</div> -->
+            </div>
+
+            <div class="position-relative">
+                <div class="position-absolute top-30 start-100 translate-middle fade-in-from-right"
+                    style="animation-delay: 1.3s">
+                    <img class="img-fluid" src="imgs/triangle_deco_right.svg" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Hero Section-->
+
+    <!--Our Partners-->
+    <div id="partner-container" class="fluid-container bg-transparent pb-3 mt-3">
+        <div class="row bg-transparent justify-content-center mx-auto">
+            <h2 class="col-6 text-center fw-semibold text-white">Our partners</h2>
+        </div>
+        <div class="row justify-content-center mx-auto">
+            <h2 class="col-6 text-center fw-normal text-grey-gradient">We're here to help.</h2>
+        </div>
+        <div class="row justify-content-center mx-auto">
+            <img class="col-3" src="imgs/azure.svg" style="max-width: 150px;" />
+            <img class="col-3" src="imgs/aws.svg" style="max-width: 150px;">
+        </div>
+
+        <div class="row justify-content-center mt-2 mx-auto">
+            <p id="partner-blurb" class="text-center col-md-6 col-9">We are proudly indigenous-owned business and
+                focus on
+                our Australian customers by helping them maximise the benefits of cloud solutions.
+                We are an AWS Partner Network (APN) Partner and Microsoft AI Cloud Partner which provides the
+                scalability and flexibility we need to ensure that your data operations run smoothly.
+            </p>
+        </div>
+
+        <div class="row justify-content-center mx-auto d-none">
+            <button id="contact-us" type="button" class="button justify-content-around d-flex flex-row mt-5">
+                <p class="my-0 text-center align-self-center">Contact us</p>
+                <img src="imgs/contact_arrow.svg" style="width: 15px;" />
+            </button>
+        </div>
+    </div>
+    <!--End Our Partners-->
+
+
+    <!--Security Section-->
+    <div id="security-container" class="fluid-container pt-5 pb-5 d-flex flex-row">
+        <div class="row mx-auto justify-content-center mx-auto">
+            <div class=" container col-md-5 col-10 mx-0 px-5 py-5">
+                <h2 class="text-start fw-semibold text-grey-gradient">Security is everything</h2>
+                <p id="security-blurb" class="mb-0 align-content-center" style="color: #B7B7B7;">From migrating to the
+                    cloud and
+                    building apps to managing data and ensuring comprehensive security, we’ve got it
+                    covered.<br /><br />
+
+                    Moreover, we’re passionate about helping build a culture of security within customer
+                    organizations.
+                    <br /><br />
+
+                    We provide the support and guidance needed to instill a security-first mindset, ensuring that
+                    security becomes an integral part of your organizational DNA.
+                </p>
+            </div>
+            <img class="security-card-effect  col-md-4 col-8 px-0" src="imgs/security.webp" />
+        </div>
+    </div>
+    <!--End security section-->
+
+    <!--Our customers section-->
+    <div id="customers-container" class="fluid-container pt-5 pb-5 d-flex flex-row">
+        <div class="row mx-auto justify-content-center mx-auto">
+            <h2>Our customers</h2>
+        </div>
+    </div>
+    <!--End of our customers section-->
+</body>
+
+</html>

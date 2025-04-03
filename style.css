@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Maven+Pro:wght@400..900&display=swap');
+
+body {
+    background-color: #111827;
+}
+
+.navbar-brand,
+.navbar-toggler-icon {
+    opacity: 0;
+    animation: 0.5s fade-in-from-top 0.2s forwards;
+}
+
+nav {
+    padding-left: 30px;
+    padding-right: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.nav-link {
+    opacity: 0;
+    animation: 0.5s fade-in-from-top forwards;
+}
+
+
+#logo {
+    max-width: 500px;
+    width: 180px;
+}
+
+h1 {
+    font-family: 'Karla';
+    font-size: 70px;
+    color: white;
+    opacity: 0;
+    animation: 1s fade-in forwards;
+}
+
+h2 {
+    font-family: 'Karla';
+    font-weight: 500;
+}
+
+#hero-container {
+    background-color: #070d1b;
+    z-index: 1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#hero {
+    width: 70%;
+    height: 700px;
+    align-content: center;
+}
+
+#hero::after {
+    background-color: white;
+    width: 100vw;
+}
+
+#hero p {
+    font-family: 'Karla';
+    font-size: 30px;
+    color: rgb(210, 210, 210);
+}
+
+#hero img {
+    max-width: 200px;
+}
+
+.button {
+    height: 60px;
+    width: 200px;
+    border-radius: 150px;
+}
+
+@media screen and (max-width: 1310px) {
+    #hero p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #hero p {
+        font-size: 19px;
+        text-align: center;
+    }
+}
+
+
+#title-color {
+    background: #196BE3;
+    background: linear-gradient(to right, #196BE3 0%, #103c7d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-grey-gradient {
+    background: #EBEBEB;
+    background: linear-gradient(to bottom, #EBEBEB 0%, #999999 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.back-glow {
+    box-shadow: 0px 0px 500px 250px rgba(19, 97, 160, 0.2);
+    content: '';
+}
+
+#partner-blurb {
+    color: #c1c1c1;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 576px) {
+    #partner-blurb {
+        font-size: 12px;
+    }
+
+    #security-blurb {
+        font-size: 14px;
+    }
+}
+
+#security-container {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: #070d1b;
+}
+
+
+.security-card-effect {
+    border: 2px solid #383838;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: 1s fade-in forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fade-in-from-top {
+    from {
+        opacity: 0s;
+        transform: translateY(-25%);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-from-right {
+    opacity: 0;
+    animation: 0.75s fade-in-from-right forwards;
+}
+
+@keyframes fade-in-from-right {
+    from {
+        opacity: 0s;
+        margin-left: 0.75vw;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Section for scroll line */
+.Scroll {
+    position: relative;
+}
+
+@media only screen and (max-width: 800px) {
+    .Scroll {
+        left: 0vw;
+    }
+}
+
+.Scroll .scroll-text {
+    font-family: sans-serif;
+    color: rgba(125, 169, 177, 0.3);
+    font-size: 20px;
+}
+
+.Scroll::after {
+    position: absolute;
+    content: '. ';
+    width: 1px;
+    margin: 0px auto;
+    background-color: rgb(92, 190, 210);
+    transform-origin: bottom center;
+    height: 0px;
+    animation: 3s scroll-in 0.75s forwards;
+}
+
+
+@keyframes scroll-in {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 40vh;
+    }
+}
+
+/* Section for alternative logo (TBC) */
+
+#draw-path {
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: draw 5s forwards;
+}
+
+
+.svg-wrapper {
+    width: 200px;
+    height: 200px;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+    opacity: 0;
+    animation: 0.75s fade-in-test 3s forwards;
+}
+
+.overlay-image.show {
+    opacity: 1;
+}
+
+
+
+@keyframes fade-in-test {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
