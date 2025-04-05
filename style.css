@@ -39,7 +39,6 @@ nav {
     color: white;
     opacity: 0;
     animation: 1s fade-in forwards;
-    white-space: normal;
 }
 
 h2 {
