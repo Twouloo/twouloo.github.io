@@ -35,59 +35,59 @@
         });
     </script>
     -->
+    <header class="sticky-top bg-transparent">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm d-flex justify-content-space-between">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img class="navbar-brand shadow-lg" id="logo" img src="imgs/logo_square.svg" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><img src="imgs/menu.svg" /></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class=" ms-auto navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown px-2">
+                            <a class="nav-link dropdown-toggle link-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="animation-delay: 0.3s;">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link nav-link link-light" href="#"
+                                style="animation-delay: 0.4s;">Contact</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link nav-link link-light" href="#"
+                                style="animation-delay: 0.5s;">About</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--End navbar-->
+    </header>
 
     <!--Start with header in hero container to overlap the background color TBC-->
     <div id='hero-container' class="fluid-container">
-        <header class="sticky-top bg-transparent">
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-sm d-flex justify-content-space-between">
-                <div class="container-fluid">
-                    <!-- Logo -->
-                    <a class="navbar-brand" href="#">
-                        <img class="navbar-brand shadow-lg" id="logo" img src="imgs/logo_square.svg" />
-                    </a>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><img src="imgs/menu.svg" /></span>
-                    </button>
-
-                    <!-- Links -->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class=" ms-auto navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item dropdown px-2">
-                                <a class="nav-link dropdown-toggle link-light" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false" style="animation-delay: 0.3s;">
-                                    Services
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link nav-link link-light" href="#"
-                                    style="animation-delay: 0.4s;">Contact</a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link nav-link link-light" href="#"
-                                    style="animation-delay: 0.5s;">About</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!--End navbar-->
-        </header>
 
         <!--Hero section-->
         <div id="hero" class="row bg-transparent justify-content-center mx-auto">
@@ -96,7 +96,7 @@
                     src="imgs/triangle_deco_left.svg" style="z-index: 1; animation-delay: 1.5s;" />
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 position-relative" style="z-index: 2;">
-                <div class="position-absolute top-50 start-50 back-glow position-relative fade-in"
+                <div class="position-absolute top-50 start-50 back-glow fade-in"
                     style="width: 1px; animation-delay: 1s;"></div>
                 <h1 style="animation-delay: 0.9s;"><span id="title-color">Altitude</span> Code</h1>
                 <p class="fw-semibold fade-in" style="animation-delay: 0.8s;">Where innovation meets new heights.</p>
@@ -131,11 +131,58 @@
         </div>
     </div>
     <!--End Hero Section-->
+    <div id="service-container" class="fluid-container position-relative d-flex flex-row justify-content-space-between">
+
+        <div class="row justify-content-center mx-auto">
+            <div class="col-md-3 col-9 service-card d-flex flex-column justify-content-center">
+                <img src="imgs/serviceIcons/frontend-icon.svg" style="width: 70px;"/>
+                <h1><span class="text-blue">Front</span>-end <span class="text-grey-gradient">Development</span></h1>
+                    <p>
+                        We specialise in using modern frameworks and technologies to bring your visions to life.
+                    </p>
+
+                    <button id="find-out-more" type="button" class="button d-flex flex-row">
+                        <p class="my-0 text-center align-self-center">Find out more</p>
+                        <img src="imgs/serviceIcons/arrow-right.svg" style="width: 15px; margin-left: 10px;" />
+                    </button>
+            </div>
+
+            <div class="col-md-3 col-9 service-card d-flex flex-column">
+                <img src="imgs/serviceIcons/cloud-icon.svg" style="width: 70px;"/>
+                <h1><span class="text-blue">Cloud</span> Services <span class="text-grey-gradient">and Security</span></h1>
+                    <p>
+                        At AltitudeCode, we pride ourselves on our proven track record of delivering tangible results in cloud cost management. 
+                        
+                    </p>
+
+                    <button id="find-out-more" type="button" class="button d-flex flex-row">
+                        <p class="my-0 text-center align-self-center">Find out more</p>
+                        <img src="imgs/serviceIcons/arrow-right.svg" style="width: 15px; margin-left: 10px;" />
+                    </button>
+            </div>
+
+            <div class="col-md-3 col-9 service-card d-flex flex-column">
+                <img src="imgs/serviceIcons/data-icon.svg" style="width: 70px;"/>
+                <h1><span class="text-blue">Data </span>Integrations <span class="text-grey-gradient">and Migrations</span></h1>
+                    <p>
+                        From data integration to actionable insight generation, we empower your decision-making and strategic initiatives.
+                        
+                    </p>
+
+                    <button id="find-out-more" type="button" class="button d-flex flex-row">
+                        <p class="my-0 text-center align-self-center">Find out more</p>
+                        <img src="imgs/serviceIcons/arrow-right.svg" style="width: 15px; margin-left: 10px;" />
+                    </button>
+            </div>
+        </div>
+
+    </div>
+    <!-- Services Section -->
 
     <!--Our Partners-->
-    <div id="partner-container" class="fluid-container bg-transparent pb-3 mt-3">
-        <div class="row bg-transparent justify-content-center mx-auto">
-            <h2 class="col-6 text-center fw-semibold text-white">Our partners</h2>
+    <div id="partner-container" class="fluid-container position-relative">
+        <div class="row justify-content-center mx-auto">
+            <h1 class="col-6 text-center fw-semibold text-white" style="text-align: center;">Our partners</h1>
         </div>
         <div class="row justify-content-center mx-auto">
             <h2 class="col-6 text-center fw-normal text-grey-gradient">We're here to help.</h2>
@@ -146,7 +193,7 @@
         </div>
 
         <div class="row justify-content-center mt-2 mx-auto">
-            <p id="partner-blurb" class="text-center col-md-6 col-9">We are proudly indigenous-owned business and
+            <p id="partner-blurb" class="text-center col-md-6 col-11">We are proudly indigenous-owned business and
                 focus on
                 our Australian customers by helping them maximise the benefits of cloud solutions.
                 We are an AWS Partner Network (APN) Partner and Microsoft AI Cloud Partner which provides the
@@ -160,6 +207,9 @@
                 <img src="imgs/contact_arrow.svg" style="width: 15px;" />
             </button>
         </div>
+
+        <div class="position-absolute start-50 partner-back-glow fade-in"
+        style="width: 1px; animation-delay: 1s;"></div>
     </div>
     <!--End Our Partners-->
 
@@ -167,7 +217,9 @@
     <!--Security Section-->
     <div id="security-container" class="fluid-container pt-5 pb-5 d-flex flex-row">
         <div class="row mx-auto justify-content-center mx-auto">
-            <div class=" container col-md-5 col-10 mx-0 px-5 py-5">
+            <div class=" container col-md-5 col-12 mx-0 px-5 py-5 position-relative">
+                <div class="position-absolute top-50 start-25 fade-in security-back-glow"
+                style="width: 1px;"></div>
                 <h2 class="text-start fw-semibold text-grey-gradient">Security is everything</h2>
                 <p id="security-blurb" class="mb-0 align-content-center" style="color: #B7B7B7;">From migrating to the
                     cloud and
