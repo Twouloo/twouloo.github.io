@@ -60,9 +60,9 @@ h2 {
     align-content: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 576px) {
     #hero {
-        width: 80%
+        width: 100%
     }
 }
 
@@ -102,12 +102,12 @@ h2 {
     }
 
     #hero h1 {
-        font-size: 40px;
+        font-size: 50px;
         text-wrap: nowrap;
     }
 
     #hero p {
-        font-size: 20px;
+        font-size: 30px;
         text-align: center;
     }
 }
