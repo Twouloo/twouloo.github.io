@@ -102,12 +102,12 @@ h2 {
     }
 
     #hero h1 {
-        font-size: 8vmax;
+        font-size: 40px;
         text-wrap: nowrap;
     }
 
     #hero p {
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
     }
 }
