@@ -102,7 +102,7 @@ h2 {
     }
 
     #hero h1 {
-        font-size: 60px;
+        font-size: 8vmax;
         text-wrap: nowrap;
     }
 
