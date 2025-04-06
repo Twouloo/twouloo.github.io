@@ -7,7 +7,7 @@ body {
 }
 
 .text-blue {
-    color:#5d9eff; 
+    color:#5d9eff !important; 
 }
 
 .navbar-brand,
@@ -34,12 +34,15 @@ nav {
 }
 
 #hero h1 {
-    font-family: 'Karla';
+    font-family: 'Hanken Grotesk';
     font-size: 70px;
+    font-weight: 500;
     color: white;
     opacity: 0;
     animation: 1s fade-in forwards;
 }
+
+
 
 h2 {
     font-family: 'Karla';
@@ -96,6 +99,10 @@ h2 {
     h1 {
         font-size: 50px;
         text-align: center;
+    }
+
+    #hero h1 {
+        font-size: 60px;
         text-wrap: nowrap;
     }
 
@@ -134,16 +141,17 @@ h2 {
     font-family: 'Hanken Grotesk';
     color: white;
     background: rgb(7,13,27);
-    background: linear-gradient(235deg, rgba(7,13,27,1) 0%, rgba(8,15,32,1) 100%);
+    background: linear-gradient(235deg, rgba(7,13,27,1) 0%, rgba(11,21,44,1) 100%);
     text-wrap: wrap;
 }
 
 .service-card h1 {
     white-space: normal;
+    text-align: left;
 }
 
 .service-card p {
-    margin-top: 50px;
+    margin-top: 25px;
     color: #b6b6b6;
     font-weight: 600;
 }
@@ -178,6 +186,12 @@ h2 {
     content: '';
 }
 
+#security-blurb {
+    font-family: 'karla';
+    font-size: 15px;
+    color: #c1c1c1;
+}
+
 @media screen and (max-width: 576px) {
     #partner-blurb {
         font-size: 12px;
@@ -195,8 +209,8 @@ h2 {
 }
 
 
-.security-card-effect {
-    border: 2px solid #383838;
+.security-img {
+    border-radius: 25px;
 }
 
 .security-back-glow {
