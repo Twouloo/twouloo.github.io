@@ -93,7 +93,7 @@
                 <img class="position-absolute top-0 start-0 translate-middle img-fluid fade-in-from-right d-none d-sm-block"
                     src=" imgs/triangle_deco_left.svg" style="z-index: 1; animation-delay: 1.5s;" />
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-11 position-relative" style="z-index: 2;">
+            <div class="col-md-6 col-11 position-relative" style="z-index: 2;">
                 <div class="position-absolute top-50 start-50 back-glow fade-in"
                     style="width: 1px; animation-delay: 1s;"></div>
                 <h1 style="animation-delay: 0.9s;"><span id="title-color" style="font-weight: 700;">Altitude</span> Code
@@ -131,6 +131,8 @@
         </div>
     </div>
     <!--End Hero Section-->
+
+    <!--Service section-->
     <div id="service-container" class="fluid-container mt-5">
         <div class="row d-flex mx-auto w-80 d-none">
             <div class="col-md-3 col-11 d-flex flex-column justify-self-center">
@@ -184,12 +186,13 @@
             </div>
         </div>
     </div>
-    <!-- Services Section -->
+    <!--End Services Section -->
 
     <!--Our Partners-->
     <div id="partner-container" class="fluid-container position-relative">
         <div class="row justify-content-center mx-auto">
-            <h1 class="col-md-6 col-12 text-center fw-semibold text-white" style="text-align: center; text-wrap: nowrap;">Our
+            <h1 class="col-md-6 col-12 text-center fw-semibold text-white"
+                style="text-align: center; text-wrap: nowrap;">Our
                 partners</h1>
         </div>
         <div class="row justify-content-center mx-auto">
@@ -225,14 +228,14 @@
     <!--Security Section-->
     <div id="security-container" class="fluid-container pt-5 pb-5 d-flex flex-row">
         <div class="row mx-auto justify-content-center mx-auto">
-            <div class=" container col-md-5 col-12 mx-0 px-5 py-5 position-relative">
+            <div class=" container col-md-5 col-12 mx-0 px-5 py-5 position-relative d-flex flex-column">
                 <div class="position-absolute top-50 start-25 fade-in security-back-glow" style="width: 1px;"></div>
                 <h1 class="text-start fw-semibold mb-5"><span class="text-blue">Security</span> <span
                         class="text-grey-gradient">is everything</span></h1>
                 <p id="security-blurb" class="mb-0 align-content-center">From migrating to the
                     cloud and
                     building apps to managing data and ensuring comprehensive security, we’ve got it
-                    covered.<br /><br />
+                    covered.
 
                     Moreover, we’re passionate about helping build a culture of security within customer
                     organizations.
@@ -241,29 +244,104 @@
                     We provide the support and guidance needed to instill a security-first mindset, ensuring that
                     security becomes an integral part of your organizational DNA.
                 </p>
+                <button id="contact-us" type="button"
+                    class="button justify-content-around flex-row mt-5 d-none d-md-flex">
+                    <p class="my-0 text-center align-self-center">Contact us</p>
+                    <img src="imgs/contact_arrow.svg" style="width: 15px;" />
+                </button>
             </div>
-            <img class="security-img col-md-4 col-8 px-0 align-self-center" src="imgs/security.webp" />
+            <img class="security-img col-md-4 col-10 px-0 align-self-center" src="imgs/security.webp" />
         </div>
     </div>
     <!--End security section-->
 
     <!--Our customers section-->
-    <div id="customers-container" class="fluid-container pt-5 pb-5 justify-content-center mx-auto">
-        <div class="row justify-content-center mx-auto">
-            <h1 class="col-6 text-center fw-semibold text-white" style="text-align: center; white-space: normal;">Our customers</h1>
+    <div id="customers-container"
+        class="fluid-container pt-3 pb-5 justify-content-center mx-auto position-relative d-flex d-none">
+        <div class="row justify-content-center mx-auto d-flex flex-row">
+            <div class="mx-auto d-flex flex-row col-12 justify-content-around">
+                <img class="customer-img" style="max-width: 100px; max-height: fit-content; align-self: center;"
+                    src="imgs/customers/macpherson.png" />
+                <img class=" customer-img" style="max-width: 200px; max-height: fit-content; align-self: center;"
+                    src="imgs/customers/elderlaw.png" />
+                <img class="customer-img" style="max-width: 120px; max-height: fit-content; align-self: center;"
+                    src="imgs/customers/sunshine.png" />
+            </div>
+            <h1 class="col-6 text-center fw-semibold text-white d-none"
+                style="text-align: center; white-space: normal;">Our
+                customers</h1>
+            <div class="position-absolute star/t-50 customer-back-glow fade-in"
+                style="width: 1px; animation-delay: 1s;">
+            </div>
         </div>
-        <div class="row mx-auto justify-content-center mx-auto d-flex flex-row px-5">
-            <img class="col-4 customer-img" src="imgs/customers/brisbane-elder-law.svg" />
-            <img class="col-4 customer-img"  src="imgs/customers/sunshine-coast-elder-law.svg" />
-            <img class="col-4 customer-img"  src="imgs/customers/macpherson-family-law.svg"/>
-        </div>
-
-        <p>
-            Let's chat—we're here to help. Our clients' satisfaction says it all; their feedback highlights the real impact and commitment we bring to each collaboration. 
-            Whether you're seeking fresh insights or solid solutions, count on us to guide you every step of the way.
-        </p>
     </div>
     <!--End of our customers section-->
+
+
+
+    <!--Blog section-->
+    <div id="blog-container" class="fluid-container position-relative">
+        <div class="row justify-content-center mx-auto">
+            <h1 class="col-md-6 col-12 text-center fw-semibold text-white"
+                style="text-align: center; text-wrap: nowrap;">From the blog</h1>
+        </div>
+
+        <div class="row justify-content-center mt-2 mx-auto">
+            <p id="partner-blurb" class="text-center col-md-6 col-11">Discover tech insights straight from our team.
+                Stay updated on the latest trends. Click for a deeper dive into our digital stories.
+            </p>
+        </div>
+
+        <div class="row justify-content-around mx-auto px-5">
+            <div class="blog-card d-flex flex-column col-3 pb-5 px-0">
+                <img class="blog-img" src="imgs/blogs/ai.jpg" />
+                <h2 class="text-white pt-4 px-2 fw-bold">Solution Architecture Principles</h2>
+                <p class="text-white pt-3 px-2">My thoughts on Linkedin Solution Architecture Principles article.</p>
+                <div class="d-flex flex-row px-2 pt-3">
+                    <img class="blog-icon" src="imgs/blogs/reece.webp" />
+                    <div class="px-3">
+                        <p class="fw-semibold text-white my-0">Reece</p>
+                        <p class="fw-light text-white">2024-03-21</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card d-flex flex-column col-3 pb-5 px-0">
+                <img class="blog-img" src="imgs/blogs/ai.jpg" />
+                <h2 class="text-white pt-4 px-2 fw-bold">Solution Architecture Principles</h2>
+                <p class="text-white pt-3 px-2">My thoughts on Linkedin Solution Architecture Principles article.</p>
+                <div class="d-flex flex-row px-2 pt-3">
+                    <img class="blog-icon" src="imgs/blogs/reece.webp" />
+                    <div class="px-3">
+                        <p class="fw-semibold text-white my-0">Reece</p>
+                        <p class="fw-light text-white">2024-03-21</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card d-flex flex-column col-3 pb-5 px-0">
+                <img class="blog-img" src="imgs/blogs/ai.jpg" />
+                <h2 class="text-white pt-4 px-2 fw-bold">Solution Architecture Principles</h2>
+                <p class="text-white pt-3 px-2">My thoughts on Linkedin Solution Architecture Principles article.</p>
+                <div class="d-flex flex-row px-2 pt-3">
+                    <img class="blog-icon" src="imgs/blogs/reece.webp" />
+                    <div class="px-3">
+                        <p class="fw-semibold text-white my-0">Reece</p>
+                        <p class="fw-light text-white">2024-03-21</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Blog section-->
+
+    <div id="blog-container" class="fluid-container position-relative mx-auto">
+            <footer class="row justify-content-around mx-auto px-5 text-white text-center">
+                <p class="col-3">Contact</p>
+                <p class="col-3">Privacy</p>
+                <p class="col-3">About</p>
+        </footer>
+    </div>
 </body>
 
 </html>
