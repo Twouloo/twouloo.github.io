@@ -140,7 +140,7 @@
             </div>
         </div>
         <div class="row justify-content-center mx-auto">
-            <div class="col-lg-3 col-10 service-card d-flex flex-column justify-content-around">
+            <div id="dev-card" class="col-lg-3 col-10 service-card d-flex flex-column justify-content-around">
                 <img src="imgs/serviceIcons/frontend-icon.svg" style="width: 70px;" />
                 <h1><span class="text-blue">Front</span>-end <span class="text-grey-gradient">Development</span></h1>
                 <p>
@@ -153,8 +153,8 @@
                 </button>
             </div>
 
-            <div class="col-lg-3 col-10 service-card d-flex flex-column justify-content-around">
-                <img src="imgs/serviceIcons/cloud-icon.svg" style="width: 70px;" />
+            <div id="sec-card" class="col-lg-3 col-10 service-card d-flex flex-column justify-content-around" style="animation-delay: 0.25s">
+                <img src="imgs/serviceIcons/cloud-icon.svg" style="width: 70px;"/>
                 <h1><span class="text-blue">Cloud</span> Services <span class="text-grey-gradient">and Security</span>
                 </h1>
                 <p>
@@ -169,7 +169,7 @@
                 </button>
             </div>
 
-            <div class="col-md-3 col-10 service-card d-flex flex-column justify-content-around">
+            <div id="data-card" class="col-lg-3 col-10 service-card d-flex flex-column justify-content-around" style="animation-delay: 0.45s">
                 <img src="imgs/serviceIcons/data-icon.svg" style="width: 70px;" />
                 <h1><span class="text-blue">Data </span>Integrations <span class="text-grey-gradient">and
                         Migrations</span></h1>
@@ -191,14 +191,14 @@
     <!--Our Partners-->
     <div id="partner-container" class="fluid-container position-relative">
         <div class="row justify-content-center mx-auto">
-            <h1 class="col-md-6 col-12 text-center fw-semibold text-white"
+            <h1 id="partner-title" class="col-md-6 col-12 text-center fw-semibold text-white"
                 style="text-align: center; text-wrap: nowrap;">Our
                 partners</h1>
         </div>
-        <div class="row justify-content-center mx-auto">
+        <div id="partner-subtitle" class="row justify-content-center mx-auto">
             <h2 class="col-md-3 col-10 text-center fw-normal text-grey-gradient text">We're here to help.</h2>
         </div>
-        <div class="row justify-content-center mx-auto">
+        <div id="partner-imgs" class="row justify-content-center mx-auto">
             <img class="col-3" src="imgs/azure.svg" style="max-width: 150px;" />
             <img class="col-3" src="imgs/aws.svg" style="max-width: 150px;">
         </div>
@@ -212,7 +212,7 @@
             </p>
         </div>
 
-        <div class="row justify-content-center mx-auto">
+        <div class="row justify-content-center mx-auto d-none">
             <button id="contact-us" type="button" class="button justify-content-around d-flex flex-row mt-5">
                 <p class="my-0 text-center align-self-center">Contact us</p>
                 <img src="imgs/contact_arrow.svg" style="width: 15px;" />
@@ -230,7 +230,8 @@
         <div class="row mx-auto justify-content-center mx-auto">
             <div class=" container col-md-5 col-12 mx-0 px-5 py-5 position-relative d-flex flex-column">
                 <div class="position-absolute top-50 start-25 fade-in security-back-glow" style="width: 1px;"></div>
-                <h1 class="text-start fw-semibold mb-5"><span class="text-blue">Security</span> <span
+                <div id="security-text" >
+                <h1 id="security-title" class="text-start fw-semibold mb-5"><span class="text-blue">Security</span> <span
                         class="text-grey-gradient">is everything</span></h1>
                 <p id="security-blurb" class="mb-0 align-content-center">From migrating to the
                     cloud and
@@ -244,12 +245,13 @@
                     Trusted by over (an arbitrary number) Australian owned partners, we provide the support and guidance needed to instill a security-first mindset, ensuring that
                     security becomes an integral part of your organizational DNA.
                 </p>
+            </div>
                 <button id="contact-us" type="button" class="button justify-content-around flex-row mt-5  d-none">
                     <p class="my-0 text-center align-self-center">Contact us</p>
                     <img src="imgs/contact_arrow.svg" style="width: 15px;" />
                 </button>
             </div>
-            <img class="security-img col-md-4 col-10 px-0 align-self-center" src="imgs/security.webp" />
+            <img id="security-img" class="col-md-4 col-10 px-0 align-self-center" src="imgs/security.webp" />
         </div>
     </div>
     <!--End security section-->
@@ -283,20 +285,22 @@
         <div class="position-absolute star/t-50 blog-back-glow fade-in"
         style="width: 1px; animation-delay: 1s;">
     </div>
+    <div id="blog-text">
         <div class="row justify-content-center mx-auto">
             <h1 class="col-md-6 col-12 text-center fw-semibold text-white"
                 style="text-align: center; text-wrap: nowrap;">From the blog</h1>
         </div>
 
         <div class="row justify-content-center mt-2 mx-auto">
-            <p id="partner-blurb" class="text-center col-md-6 col-11">Discover tech insights straight from our team.
+            <p id="blog-blurb" class="text-center col-md-6 col-11">Discover tech insights straight from our team.
                 Stay updated on the latest trends. Click for a deeper dive into our digital stories.
             </p>
         </div>
+    </div>
 
         <div class="blog-row row justify-content-center mx-auto g-0 pt-5">
 
-            <div class="blog-card d-flex flex-column col-md-3 col-12">
+            <div id="blog-card-1" class="blog-card d-flex flex-column col-md-3 col-12">
                 <img class="blog-img" src="imgs/blogs/ai.jpg" />
                 <div class="px-2">
                 <h3 class="text-white pt-4 px-2 fw-bold">Solution Architecture Principles</h3>
@@ -311,7 +315,7 @@
                 </div>
             </div>
 
-            <div class="blog-card d-flex flex-column col-md-3 col-12 my-3 my-md-0">
+            <div id="blog-card-2"class="blog-card d-flex flex-column col-md-3 col-12 my-3 my-md-0" style="animation-delay: 0.15s">
                 <img class="blog-img" src="imgs/blogs/ai-2.webp" />
                 <div class="px-2">
                 <h3 class="text-white pt-4 px-2 fw-bold">Introduction to Machine Learning</h3>
@@ -326,7 +330,7 @@
                 </div>
             </div>
 
-            <div class="blog-card d-flex flex-column col-md-3 col-12">
+            <div id="blog-card-3" class="blog-card d-flex flex-column col-md-3 col-12" style="animation-delay: 0.3s">
                 <img class="blog-img" src="imgs/blogs/react.webp" />
                 <div class="px-2">
                 <h3 class="text-white pt-4 px-2 fw-bold">React optimization methods</h3>
@@ -364,5 +368,9 @@
         </footer>
 
 </body>
+
+    <!--Observer script import-->
+    <script src="observer.js"></script>
+    <!--End observer script import-->
 
 </html>

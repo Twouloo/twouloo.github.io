@@ -88,6 +88,7 @@ h2 {
     height: 60px;
     width: 200px;
     border-radius: 150px;
+    border: none;
 }
 
 @media screen and (max-width: 1310px) {
@@ -138,7 +139,6 @@ h2 {
     content: '';
 }
 
-
 .service-card {
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.25);
@@ -149,6 +149,11 @@ h2 {
     background: rgb(7,13,27);
     background: linear-gradient(235deg, rgba(7,13,27,1) 0%, rgba(11,21,44,1) 100%);
     text-wrap: wrap;
+}
+
+#dev-card, #sec-card, #data-card, #partner-title, #partner-subtitle, 
+#partner-imgs, #partner-blurb, #security-text, #security-img, #blog-text, #blog-card-1, #blog-card-2, #blog-card-3 {
+    opacity: 0;
 }
 
 .service-card h1 {
@@ -179,7 +184,7 @@ h2 {
     overflow: hidden;
 }
 
-#partner-blurb {
+#partner-blurb, #blog-blurb {
     color: #c1c1c1;
     font-size: 15px;
     font-weight: 500;
@@ -222,11 +227,10 @@ h2 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     background-color: #070d1b;
     overflow: hidden;
-
 }
 
 
-.security-img {
+#security-img {
     border-radius: 15px;
     max-width: 500px;
 }
@@ -265,7 +269,7 @@ h2 {
     border-radius: 25px;
     background: rgb(0, 0, 0);
     background: linear-gradient(345deg, rgb(16, 26, 53) 0%, rgb(9, 15, 31) 100%);
-    border: 1px solid rgb(20, 34, 68);
+    /*border: 1px solid rgb(20, 34, 68);*/
     margin: 0 20px 0 20px;
     max-width: 450px;
     box-shadow: 0px 20px 5px 5px rgba(0, 0, 0, 0.2);
@@ -300,6 +304,11 @@ h2 {
     animation: 1s fade-in forwards;
 }
 
+.fade-in-soft {
+    opacity: 0;
+    animation: 1s fade-in-soft forwards;
+}
+
 .blog-back-glow {
     left: 50%;
     box-shadow: 0px 0px 200px 250px rgba(13, 63, 104, 0.2);
@@ -311,6 +320,17 @@ h2 {
     from {
         opacity: 0;
         transform: translateY(10%);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-soft {
+    from {
+        opacity: 0;
+        transform: translateY(5%);
     }
 
     to {
